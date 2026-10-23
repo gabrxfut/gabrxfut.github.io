@@ -1,0 +1,179 @@
+:root {
+    --main-naranja-color: #ffb347;
+    --main-gris-color: #8b95a3;
+    --main-negro-color: #0b0f17;
+    --main-blanco-color: #e8ecf1;
+    --main-verde-color: #23a55a;
+}
+
+body {
+    background-color: var(--main-negro-color);
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.nombre {
+    font-size: 1.3rem;
+}
+
+.texto1 {
+    font-size: 4rem;
+}
+
+.profesion {
+    font-size: 2rem;
+}
+
+.imagen {
+    border-radius: 20%;
+    width: 400px;
+    max-width: 50%;
+    height: auto;
+}
+
+.texto-blanco {
+    color: var(--main-blanco-color);
+}
+
+.texto-gris {
+    color: var(--main-gris-color);
+}
+
+.texto-naranja {
+    color: var(--main-naranja-color);
+}
+
+.habla {
+    font-size: 4rem;
+}
+
+.secciones {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+dl {
+    border-top: 1px solid var(--main-gris-color);
+    border-bottom: 1px solid var(--main-gris-color);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proyecto-contenido {
+    border-top: 1px solid var(--main-gris-color);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
+.proyecto-contenido:last-child{
+    border-bottom: 1px solid var(--main-gris-color);
+}
+
+.circulo {
+    border: 10px solid;
+    border-radius: 50%;
+    color: var(--main-verde-color);
+    margin-right: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-hablemos {
+    margin-left: 20px;
+}
+
+.boton-proyectos {
+    color: var(--main-negro-color);
+    background-color: var(--main-naranja-color);
+}
+
+.boton {
+    border: var(--main-naranja-color) 1px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texto-mayuscula {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div dd {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+}
+
+.espacio-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.lista-sin-punto {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+        gap: 55px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .texto1 {
+        font-size: 3.5rem;
+    }
+
+    .profesion {
+        font-size: 0.9rem;
+    }
+
+    .menu .espacio-menu {
+        display: none;
+    }
+
+    .nombre {
+        font-size: 1rem;
+    }
+
+    body {
+        margin: 12px;
+    }
+
+    dl {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .habla {
+        font-size: 3.5rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }   
+}
