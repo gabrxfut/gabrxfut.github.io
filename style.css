@@ -4,6 +4,7 @@
     --main-negro-color: #0b0f17;
     --main-blanco-color: #e8ecf1;
     --main-verde-color: #23a55a;
+    --main-titulo-letra: "Space Grotesk", sans-serif;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 
 .nombre {
     font-size: 1.3rem;
+    font-family: var(--main-titulo-letra);
 }
 
 .texto1 {
