@@ -4,30 +4,28 @@
     --main-negro-color: #0b0f17;
     --main-blanco-color: #e8ecf1;
     --main-verde-color: #23a55a;
-    --main-letra-blanca: "Space Grotesk", sans-serif;
-    --main-letra-gris: "Inter", sans-serif;
-    --main-letra-naranja: "JetBrains Mono", monospace;
+    --main-space-grotesk: "Space Grotesk", sans-serif;
+    --main-inter: "Inter", sans-serif;
+    --main-jetbrains-mono: "JetBrains Mono", monospace;
 }
 
 body {
     background-color: var(--main-negro-color);
-    font-family: sans-serif;
+    font-family: var(--main-inter);
     margin: 20px;
 }
 
 .nombre {
     font-size: 2rem;
-    font-family: var(--main-letra-blanca);
 }
 
 .texto1 {
     font-size: 6rem;
-    font-family: var(--main-letra-blanca);
 }
 
 .profesion {
     font-size: 2rem;
-    font-family: var(--main-letra-naranja);
+    font-family: var(--main-jetbrains-mono);
 }
 
 .imagen {
@@ -43,7 +41,6 @@ body {
 
 .texto-gris {
     color: var(--main-gris-color);
-    font-family: var(--main-letra-gris);
 }
 
 .texto-naranja {
@@ -52,13 +49,12 @@ body {
 
 .habla {
     font-size: 5rem;
-    font-family: var(--main-letra-blanca);
 }
 
 .secciones {
     margin: 10px 5px;
     padding: 10px;
-    font-family: var(--main-letra-naranja);
+    font-family: var(--main-jetbrains-mono);
 }
 
 .menu {
@@ -75,7 +71,6 @@ dl {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--main-letra-naranja);
 }
 
 .proyecto-contenido {
@@ -103,17 +98,11 @@ header {
 
 .boton-hablemos {
     margin-left: 20px;
-    font-family: var(--main-letra-gris);
 }
 
 .boton-proyectos {
     color: var(--main-negro-color);
     background-color: var(--main-naranja-color);
-    font-family: var(--main-letra-gris);
-}
-
-.cv{
-    font-family: var(--main-letra-gris);
 }
 
 .boton {
@@ -141,7 +130,6 @@ div dd {
     display: flex;
     justify-content: space-between;
     margin-left: 0;
-    font-family: var(--main-letra-blanca);
 }
 
 .espacio-menu {
@@ -152,11 +140,6 @@ div dd {
 .lista-sin-punto {
     list-style-type: none;
     padding-left: 0;
-    font-family: var(--main-letra-blanca);
-}
-
-.texto-seccion{
-    font-family: var(--main-letra-blanca);
 }
 
 @media (max-width:768px) {
