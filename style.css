@@ -25,7 +25,13 @@ body {
 
 .profesion {
     font-size: 2rem;
+}
+
+.etiqueta-seccion{
     font-family: var(--main-jetbrains-mono);
+}
+.titulo{
+    font-family: var(--main-space-grotesk);
 }
 
 .imagen {
@@ -54,7 +60,6 @@ body {
 .secciones {
     margin: 10px 5px;
     padding: 10px;
-    font-family: var(--main-jetbrains-mono);
 }
 
 .menu {
