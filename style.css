@@ -27,10 +27,11 @@ body {
     font-size: 2rem;
 }
 
-.etiqueta-seccion{
+.etiqueta-seccion {
     font-family: var(--main-jetbrains-mono);
 }
-.titulo{
+
+.titulo {
     font-family: var(--main-space-grotesk);
 }
 
@@ -84,7 +85,7 @@ dl {
     padding: 10px 20px;
 }
 
-.proyecto-contenido:last-child{
+.proyecto-contenido:last-child {
     border-bottom: 1px solid var(--main-gris-color);
 }
 
@@ -117,6 +118,10 @@ header {
     display: inline-block;
 }
 
+.boton-menu {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -137,7 +142,7 @@ div dd {
     margin-left: 0;
 }
 
-.espacio-menu {
+.menu-abierto {
     display: flex;
     gap: 20px;
 }
@@ -163,8 +168,10 @@ div dd {
         font-size: 0.9rem;
     }
 
-    .menu .espacio-menu {
+    .menu {
         display: none;
+        margin-top: 40px;
+
     }
 
     .nombre {
@@ -185,5 +192,32 @@ div dd {
         font-size: 3.5rem;
         margin-top: 10px;
         margin-bottom: 0;
-    }   
+    }
+
+    .boton-menu {
+        display: flex;
+        color: var(--main-blanco-color);
+        background-color: var(--main-negro-color);
+        border-radius: 10px;
+        border: 1px solid var(--main-gris-color);
+        padding: 10px 10px;
+
+    }
+
+    .menu-abierto {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 1.6rem;
+        z-index: integer;
+        background-color: var(--main-negro-color);
+    }
+
+    .boton-hablemos {
+        margin-top: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
+        color: var(--main-negro-color);
+        background-color: var(--main-naranja-color);
+    }
 }
