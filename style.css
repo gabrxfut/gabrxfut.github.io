@@ -4,7 +4,9 @@
     --main-negro-color: #0b0f17;
     --main-blanco-color: #e8ecf1;
     --main-verde-color: #23a55a;
-    --main-titulo-letra: "Space Grotesk", sans-serif;
+    --main-letra-blanca: "Space Grotesk", sans-serif;
+    --main-letra-gris: "Inter", sans-serif;
+    --main-letra-naranja: "JetBrains Mono", monospace;
 }
 
 body {
@@ -14,17 +16,18 @@ body {
 }
 
 .nombre {
-    font-size: 1.3rem;
-    font-family: var(--main-titulo-letra);
+    font-size: 2rem;
+    font-family: var(--main-letra-blanca);
 }
 
 .texto1 {
     font-size: 6rem;
-    font-family: var(--main-titulo-letra);
+    font-family: var(--main-letra-blanca);
 }
 
 .profesion {
     font-size: 2rem;
+    font-family: var(--main-letra-naranja);
 }
 
 .imagen {
@@ -40,6 +43,7 @@ body {
 
 .texto-gris {
     color: var(--main-gris-color);
+    font-family: var(--main-letra-gris);
 }
 
 .texto-naranja {
@@ -48,12 +52,13 @@ body {
 
 .habla {
     font-size: 5rem;
-    font-family: var(--main-titulo-letra);
+    font-family: var(--main-letra-blanca);
 }
 
 .secciones {
     margin: 10px 5px;
     padding: 10px;
+    font-family: var(--main-letra-naranja);
 }
 
 .menu {
@@ -70,6 +75,7 @@ dl {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--main-letra-naranja);
 }
 
 .proyecto-contenido {
@@ -97,11 +103,17 @@ header {
 
 .boton-hablemos {
     margin-left: 20px;
+    font-family: var(--main-letra-gris);
 }
 
 .boton-proyectos {
     color: var(--main-negro-color);
     background-color: var(--main-naranja-color);
+    font-family: var(--main-letra-gris);
+}
+
+.cv{
+    font-family: var(--main-letra-gris);
 }
 
 .boton {
@@ -129,7 +141,7 @@ div dd {
     display: flex;
     justify-content: space-between;
     margin-left: 0;
-    font-family: var(--main-titulo-letra);
+    font-family: var(--main-letra-blanca);
 }
 
 .espacio-menu {
@@ -140,11 +152,11 @@ div dd {
 .lista-sin-punto {
     list-style-type: none;
     padding-left: 0;
+    font-family: var(--main-letra-blanca);
 }
 
-h3{
-    font-family: var(--main-titulo-letra);
-    font-size: 3rem;
+.texto-seccion{
+    font-family: var(--main-letra-blanca);
 }
 
 @media (max-width:768px) {
