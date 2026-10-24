@@ -142,11 +142,6 @@ div dd {
     margin-left: 0;
 }
 
-.menu-abierto {
-    display: flex;
-    gap: 20px;
-}
-
 .lista-sin-punto {
     list-style-type: none;
     padding-left: 0;
@@ -201,16 +196,18 @@ div dd {
         border-radius: 10px;
         border: 1px solid var(--main-gris-color);
         padding: 10px 10px;
-
+        position: relative;
+        z-index: 50;
     }
 
     .menu-abierto {
         display: flex;
         flex-direction: column;
         position: fixed;
-        inset: 1.6rem;
-        z-index: integer;
+        inset: 0;
+        z-index: 40;
         background-color: var(--main-negro-color);
+        padding: 80px 24px;
     }
 
     .boton-hablemos {

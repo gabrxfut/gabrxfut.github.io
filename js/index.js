@@ -1,7 +1,7 @@
 const botonMenu = document.querySelector(".boton-menu");
 const menu = document.querySelector(".menu");
 
-botonMenu.addEventListener("click", () => {
+botonMenu.addEventListener("click", () =>  {
   const menuAbierto = menu.classList.toggle("menu-abierto");
   botonMenu.setAttribute("aria-expanded", menuAbierto);
 });
