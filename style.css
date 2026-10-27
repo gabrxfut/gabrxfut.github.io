@@ -4,6 +4,7 @@
     --main-negro-color: #0b0f17;
     --main-blanco-color: #e8ecf1;
     --main-verde-color: #23a55a;
+    --main-azul-color:#121824;
     --main-space-grotesk: "Space Grotesk", sans-serif;
     --main-inter: "Inter", sans-serif;
     --main-jetbrains-mono: "JetBrains Mono", monospace;
@@ -30,10 +31,12 @@ body {
 }
 
 .caja {
-    border: #8b95a3 solid 1px;
+    border: var(--main-gris-color) solid 1px;
     border-radius: 20px;
-    background-color: #121824;
-
+    background-color: var(--main-azul-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .etiqueta-seccion {
@@ -158,6 +161,9 @@ div dd {
 .lista-sin-punto {
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 @media (max-width:768px) {
