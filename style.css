@@ -4,7 +4,8 @@
     --main-negro-color: #0b0f17;
     --main-blanco-color: #e8ecf1;
     --main-verde-color: #23a55a;
-    --main-azul-color:#121824;
+    --main-azul-color: #121824;
+    --main-naranja-claro-color: #ffc978;
     --main-space-grotesk: "Space Grotesk", sans-serif;
     --main-inter: "Inter", sans-serif;
     --main-jetbrains-mono: "JetBrains Mono", monospace;
@@ -116,11 +117,28 @@ header {
 
 .boton-hablemos {
     margin-left: 20px;
+    transition: 0.2s;
+}
+
+.boton-hablemos:hover {
+    background-color: rgb(255 179 71 / 0.12);
+}
+
+.boton-proyectos:hover {
+    background-color: var(--main-naranja-claro-color);
+    transform: translateY(-2px);
+}
+
+.boton-proyectos:focus-visible {
+    outline: 2px solid var(--main-blanco-color);
+
+    outline-offset: 3px;
 }
 
 .boton-proyectos {
     color: var(--main-negro-color);
     background-color: var(--main-naranja-color);
+    transition: 0.2s;
 }
 
 .boton {
@@ -132,6 +150,33 @@ header {
 
 .boton-menu {
     display: none;
+}
+
+.menu a {
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: var(--main-blanco-color);
+    text-decoration: underline;
+    text-decoration-color: var(--main-naranja-color);
+}
+
+.menu a:focus-visible,
+.boton-hablemos:focus-visible,
+.cv:focus-visible {
+    outline: 2px solid var(--main-naranja-color);
+
+    outline-offset: 3px;
+}
+
+.cv {
+    transition: 0.2s;
+}
+
+.cv:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-naranja-color);
 }
 
 a {
@@ -235,6 +280,7 @@ div dd {
         padding-right: 80px;
         color: var(--main-negro-color);
         background-color: var(--main-naranja-color);
+
     }
 
     .boton-menu[aria-expanded="true"] .icono-abrir {
