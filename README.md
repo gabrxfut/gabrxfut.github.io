@@ -5,7 +5,7 @@ Una página web para poder ver mis datos y habilidades para personas que quieran
 🔗 [Enlace para ver el portafolio en vivo](https://gabrxfut.github.io/)
 
 
-![Captura de pantalla del portafolio](images\captura.png)
+![Captura de pantalla del portafolio](images/captura.png)
 
 
 
