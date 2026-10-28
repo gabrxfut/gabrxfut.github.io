@@ -176,6 +176,7 @@ header {
 
 .cv {
     transition: 0.2s;
+    margin-left: 20px;
 }
 
 .cv:hover {
