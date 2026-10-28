@@ -11,6 +11,10 @@
     --main-jetbrains-mono: "JetBrains Mono", monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--main-negro-color);
     font-family: var(--main-inter);
