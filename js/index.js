@@ -16,3 +16,10 @@ cierraMenu.forEach((cierra) => {
     botonMenu.setAttribute("aria-label", "Abrir menú");
   });
 });
+
+const botonTema = document.querySelector(".boton-tema");
+botonTema.addEventListener("click", () => {
+  const claro = document.body.classList.toggle("modo-claro");
+  botonTema.setAttribute("aria-pressed", claro);
+  botonTema.textContent = claro ? "🌙 Modo Oscuro" : "☀️ Modo Claro";
+});

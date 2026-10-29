@@ -21,6 +21,14 @@ body {
     margin: 20px;
 }
 
+.modo-claro {
+    --main-negro-color: #f5f3ee;
+    --main-blanco-color: #11151c;
+    --main-azul-color: #ffffff;
+    --main-gris-color: #696969;
+    --main-naranja-color: #b35c00;
+}
+
 .nombre {
     font-size: 2rem;
 }
@@ -117,6 +125,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.boton-tema {
+    margin-left: auto;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-family: var(--main-inter);
+    color: var(--main-gris-color);
+    background-color: var(--main-negro-color);
+    border: 1px solid var(--main-gris-color);
+    padding: 5px;
 }
 
 .boton-hablemos {
