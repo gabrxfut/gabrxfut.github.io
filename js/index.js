@@ -18,8 +18,9 @@ cierraMenu.forEach((cierra) => {
 });
 
 const botonTema = document.querySelector(".boton-tema");
+const textoTema = botonTema.querySelector("span");
 botonTema.addEventListener("click", () => {
   const claro = document.body.classList.toggle("modo-claro");
   botonTema.setAttribute("aria-pressed", claro);
-  botonTema.textContent = claro ? "🌙 Modo Oscuro" : "☀️ Modo Claro";
+  textoTema.textContent = claro ? "Modo Oscuro" : "Modo Claro";
 });

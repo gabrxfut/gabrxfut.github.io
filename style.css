@@ -29,6 +29,14 @@ body {
     --main-naranja-color: #b35c00;
 }
 
+.modo-claro .icono-sol {
+    display: none;
+}
+
+.modo-claro .icono-luna {
+    display: inline;
+}
+
 .nombre {
     font-size: 2rem;
 }
@@ -136,6 +144,9 @@ header {
     background-color: var(--main-negro-color);
     border: 1px solid var(--main-gris-color);
     padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .boton-hablemos {
@@ -233,6 +244,10 @@ div dd {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.icono-luna {
+    display: none;
 }
 
 @media (max-width:768px) {
